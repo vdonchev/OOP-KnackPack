@@ -8,23 +8,18 @@
             string name, 
             double weight, 
             string model,
-            bool swtichedOn) 
+            bool hasScreen) 
             : base(name, weight, model)
         {
-            this.SwitchedOn = swtichedOn;
+            this.HasScreen = hasScreen;
         }
 
-        public bool SwitchedOn { get; private set; }
-
-        public void ChangeState()
-        {
-            this.SwitchedOn = !this.SwitchedOn;
-        }
+        public bool HasScreen { get; private set; }
 
         public override string ToString()
         {
             return base.ToString()
-                + $", Status: {(this.SwitchedOn ? "On" : "Off")}";
+                + $", HasScreen: {(this.HasScreen ? "Yes" : "No")}";
         }
     }
 }

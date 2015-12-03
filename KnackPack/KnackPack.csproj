@@ -44,12 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IKnackpack.cs" />
+    <Compile Include="Interfaces\IMobilePhone.cs" />
     <Compile Include="Models\Items\SleeveType.cs" />
     <Compile Include="Models\Items\WearType.cs" />
     <Compile Include="Models\Items\Electronic.cs" />
     <Compile Include="Interfaces\IItem.cs" />
     <Compile Include="Interfaces\IElectronic.cs" />
-    <Compile Include="Interfaces\IMobilePhone.cs" />
     <Compile Include="Interfaces\ILaptop.cs" />
     <Compile Include="Models\Items\Item.cs" />
     <Compile Include="Interfaces\IWear.cs" />

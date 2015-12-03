@@ -1,9 +1,7 @@
 ﻿namespace KnackPack.Interfaces
 {
-    public interface IMobilePhone : IElectronic
+    public interface IMobilePhone
     {
-        bool SwitchedOn { get; }
-
-        void ChangeState();
+        bool HasScreen { get; }
     }
 }

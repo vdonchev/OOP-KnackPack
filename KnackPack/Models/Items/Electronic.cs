@@ -27,10 +27,17 @@
             }
         }
 
+        public bool State { get; private set; }
+
+        public void ChangeState()
+        {
+            this.State = !this.State;
+        }
+
         public override string ToString()
         {
             return base.ToString() 
-                + $", Model: {this.Model}";
+                + $", Model: {this.Model}, Status: {(this.State ? "On" : "Off")}";
         }
     }
 }
